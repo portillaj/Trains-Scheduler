@@ -8,17 +8,44 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <style>
+      #header {
+        color: white;
+        background-color: #DC8C26;
+      }
+      
+      #my-panel {
+        color: white;
+        background-color: #1F6EAE;
+      }
+
+      #sub-header {
+        color: white;
+        background-color: #721FAE;
+      }
+
+      .panel {
+        background-color: #726D76;
+      }
+
+      #click-button {
+        background-color: #59D7D6;
+        color: white;
+      }
+
+    </style>
   </head>
   <body>
-      <div class="container-fluid">
-    <div class="jumbotron">
+      <div class="container">
+    <div class="jumbotron" id="header">
       <h1 class="text-center">Anytime is Train Time</h1>
       <h3 class="text-center">Choo Choo...All Aboard!</h3>
     </div>
 
     <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Current Train Schedule</div>
+  <div class="panel-heading" id="my-panel">Current Train Schedule</div>
   
   <!-- Table -->
   <table class="table" id="train-table">
@@ -36,7 +63,7 @@
 
 </div>
 <div class="panel panel-default">
-  <div class="panel-heading">
+  <div class="panel-heading" id="sub-header">
     <h3 class="panel-title">Add Train</h3>
   </div>
   <div class="panel-body">
